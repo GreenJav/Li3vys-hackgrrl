@@ -50,7 +50,7 @@
     --azulclaro: #033E8C;
     --azulescuro: #021373;
     --gradienteAzul: linear-gradient(to bottom right, #01A0FC, #29F499);
-    --gradienterosa: linear-gradient(to bottom right, #5351FC, #FB7779);
+    --gradienterosa:  linear-gradient(180deg, rgba(246,243,238,1) 0%, rgba(242,94,107,1) 61%);
     --gradienteamarelo: linear-gradient(to bottom right, #f7e06d, #f2a03d);
     
 }
@@ -156,28 +156,12 @@ p {
             transform: none !important;
 }
 
-.btn-custom-orange {
-    color: var(--azulescuro);
-    background: var(--gradienteamarelo);
-    border-radius: 22px;
-    padding: 10px;
-    white-space: nowrap;
-    -webkit-transition: 250ms;
-    -o-transition: 250ms;
-    transition: 250ms;
-    margin-top: 3%;
-    margin-left: 25%;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.nav-link .btn-custom-orange{
 
-}
-.btn-outline-custom-orange {
-    color: var(--amarelo);
+.btn-outline-custom-white {
+    color: #FFFFFF;
     border-width: 2px;
-    border-color: var(--amarelo);
-    border-radius: 24px;
+    border-color: #FFFFFF;
+    border-radius: 22px;
     padding: 10px;
     white-space:initial;
     -webkit-transition: 250ms;
@@ -185,30 +169,23 @@ p {
     transition: 250ms;
     justify-content: inherit;
 }
+.btn-outline-custom-orange {
+  color: var(--gradienterosa);
+  border-color:var(--azulclaro);
+  -webkit-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
+}
 
 .btn-outline-custom-orange:hover {
     color: var(--azulclaro);
-    border-color: var(--azulclaro);
+    border-color:var(--azulclaro);
     -webkit-transition: 250ms;
     -o-transition: 250ms;
     transition: 250ms;
 }
 
-.btn-custom-orange:hover {
-    color: #FFFFFF;
-    background: var(--azulclaro);
-    -webkit-transition: 250ms;
-    -o-transition: 250ms;
-    transition: 250ms;
-}
 
-.navbar-nav .nav-link.btn-custom-orange {
-    max-width: 113px;
-}
-
-.navbar-nav .nav-link.btn-custom-orange:hover {
-    color: #FFFFFF;
-}
 
 .navbar-toggler {
     border: 2px solid var(--azulclaro);
@@ -267,6 +244,7 @@ p {
   body.dark {
     background: var(--azulclaro);
   }
+
   body.dark p {
     color: #cbcdda;
   }
@@ -275,6 +253,10 @@ p {
   }
   body.dark h1 {
     color: whitesmoke;
+  }
+
+  body.dark h2 {
+    color: #cbcdda;
   }
   body.dark .team h1 {
     color: var(--azulclaro);
@@ -376,51 +358,24 @@ p {
             align-items: center;
     height: 200px;
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: 22px;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
-    margin: 10px;
+    
 }
 
-.destaque-servicos .destaque-box h2 {
-    font-size: 1.7em;
-    color: #FFFFFF;
-    margin-top: 10px;
-    margin-bottom: -0.3rem;
-}
 
-.destaque-servicos .destaque-box img {
-    height: 80px;
-    -webkit-animation: scaleup 8s ease-in-out infinite;
-            animation: scaleup 8s ease-in-out infinite;
-}
 
-.destaque-servicos .destaque-box.mobile-app {
-    background: var(--azulescuro);
-}
 
-.destaque-servicos .destaque-box.web-design {
-    background: var(--rosa);
-}
 
-.destaque-servicos .destaque-box.marketing {
-    background: var(--amarelo);
-}
-.destaque-servicos .destaque-box.algum {
-  background: var(--creme);
-}
 .destaque-servicos .work {
     border: 0;
     padding: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0 2rem;
+    
 }
 
-.destaque-servicos .work img {
-    -webkit-animation: scaleup 8s ease-in-out infinite;
-            animation: scaleup 8s ease-in-out infinite;
-}
 
 @media (max-width: 575px) {
     .destaque-servicos .work img {
@@ -438,11 +393,11 @@ p {
 
 @media (min-width: 768px) {
     .destaque-servicos .work {
-        height: 200px;
+        height:100%;
     }
 
     .destaque-servicos .work img {
-        height: 200px;
+        height: 100%;
     }
 }
 /*últimos projetos sections*/
@@ -475,7 +430,7 @@ p {
 }
 
 .latest-work .destaque-trabalho:hover {
-    background: #9557E69D;
+    background: var(--creme);
     opacity: 1;
     -webkit-transition: 250ms linear;
     -o-transition: 250ms linear;
@@ -485,27 +440,7 @@ p {
 .latest-work .destaque-trabalho>div {
     height: 100%;
 }
-/* Caroussel style*/
 
-.fill-purple
-{
-  background-image: linear-gradient(90deg, #4addff, #a34dfe);
-}
-
-.fill-green
-{
-  background-image: linear-gradient(90deg, #ffe40c, #33d497);
-}
-
-.fill-blue
-{
-  background-image: linear-gradient(90deg, #285ca5, #18d5ff);
-}
-
-.fill-orange
-{
-  background-image: linear-gradient(90deg, #fcf595, #ff954d);
-}
 
 .cards
 {
@@ -1275,41 +1210,63 @@ letter-spacing: 4px;
 width: 90%;
 }
 }
-/*Novo botão*/
+/*novos botão*/
+.wrap {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+
+  min-height: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;  
+  letter-spacing: 1.1px;
+  font-weight: 80%;
+  color: var(--azulclaro);
+  background: var(--amarelo);
+background:var(--gradienterosa);
+  border: none;
+  border-radius: 22px;
+  box-shadow: 12px 12px 20px rgba(236, 161, 199, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 5px;
+  }
 
 
 
-a {
-  text-decoration:none;
-  color:#FFF;
-}
-.rainbow-button {
-  width:calc(20vw + 6px);
-  height:calc(8vw + 6px);
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-  border-radius:5px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-transform:uppercase;
-  font-size:3vw;
-  font-weight:bold;
-}
-.rainbow-button:after {
-  content:attr(alt);
-  width:20vw;
-  height:8vw;
-  background-color:#f1f1f1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.rainbow-button:hover {
-  animation:slidebg 2s linear infinite;
+
+.button:hover, .button:focus {
+  color: var(--azulescuro);
+  transform: translateY(-6px);
 }
 
-@keyframes slidebg {
-  to {
-    background-position:20vw;
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
   }
 }
+
+
