@@ -17,3 +17,5 @@ Repositório para o projeto do Hack Grrrl 2021 com o tema "Ética em marketing p
 -  Reaproveitar códigos, otimizando-os para um objetivo escolhido em um tempo relativamente curto, saber lidar com erros e bugs, entendendo meu limites e procurando melhores soluções para as dificuldades encontradas.
 ## Se vocês fossem participar de um hackathon semana que vem, fariam algo de diferente com relação às escolhas das tecnologias utilizadas?
 - Depende muito da finalidade do próximo hackathon, mas sempre buscamos ter uma evolução entre cada hacka que participamos.Provavelmente tentar usar React para auxiliar o desenvolvimento.
+
+
