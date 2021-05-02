@@ -1,7 +1,9 @@
 
+![image10](https://user-images.githubusercontent.com/60523172/116831568-9a710e80-ab86-11eb-94e6-953845126473.png)
 
 
-![image10](https://user-images.githubusercontent.com/60523172/116831448-da83c180-ab85-11eb-8047-74c262018373.png)
+![computador](https://user-images.githubusercontent.com/60523172/116831641-fb98e200-ab86-11eb-8b17-90fcc8ca7072.png)
+
 
 # li3vys-hackgrrrl
 Repositório para o projeto do Hack Grrrl 2021 com o tema "Ética em marketing para o público feminino"
